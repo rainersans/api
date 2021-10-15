@@ -1,5 +1,5 @@
 
-![ARNZ-API](https://telegra.ph/file/c793578cfabf67d292dd0.png)
+![BOTINDO-API](https://telegra.ph/file/7d987f5f5e79e3fbfa733.png)
 # ARNZ - AAPI's
 <p align="center">
 <a href="https://github.com/LoliKillers/Arnz-Api/network/members" alt="GitHub stars"> <img src="https://img.shields.io/github/stars/LoliKillers/Arnz-Api?style=flat&logo=github&color=yellow" /> </a>
@@ -22,7 +22,7 @@
 <a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-blue.svg" /> </a>
 </p>
 
-## ARNZ Rest Api
+## BOTINDO Rest Api
 
 Repository ini saya buat hanyu untuk membantu mereka yang ingi memiliki rest api website sendiri
 
