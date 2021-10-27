@@ -12,7 +12,7 @@ var lolkill = db.get("lolkill");
 var creatorList = ['Fardan','Fax official','Fax-xyzapi','Fard','Fard','Fax-api','Fard','Faxganz','Fardan'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
-keyapi = 'api-Fardan'
+keyapi = 'api-indo'
 
 var axios = require('axios');
 var qs = require('qs');
