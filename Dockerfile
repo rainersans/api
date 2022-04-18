@@ -1,11 +1,26 @@
 FROM node:16.13.0
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install nodejs -y
+RUN apt-get update && \
+  apt-get install -y \
+  chromium \
+  ffmpeg \
+  wget \
+  mc \
+  imagemagick && \
+  rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
-COPY . /app
+COPY package.json .
 RUN npm install
-CMD ["node", "index.js"]
-EXPOSE 6892
+#RUN npm install -g npm-check-updates
+#RUN ncu --upgrade
+
+WORKDIR /zyxmaple-api
+COPY . /zyxmaple-api
+ENV TZ=Asia/Jakarta
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN ls
+
+EXPOSE 5000
+
+CMD ["npm", "start"]
